@@ -24,7 +24,7 @@ while(1):
         
          _,contours,hierarchy= cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     
-        cnt = max(contours, key = lambda x: cv2.contourArea(x))
+        cnt = max(contours, key = lambda x: cv2.contourArea(x) )
         
         epsilon = 0.0005*cv2.arcLength(cnt,True)
         approx= cv2.approxPolyDP(cnt,epsilon,True)
