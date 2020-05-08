@@ -1,3 +1,6 @@
+PROGRAM FOR MAR MARKS : HAND GESTURE USING OPEN CV IN PYTHON 
+
+
 import cv2
 import numpy as np
 import math
